@@ -10,6 +10,8 @@ package drawingapplication;
  * @author 12dow_000
  */
 public abstract class Shape extends DrawingApplication{
-    double x;
-    double y;
+    int x;
+    int y;
+    
+    
 }
