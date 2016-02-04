@@ -10,15 +10,15 @@ import java.awt.Graphics;
  * @author 12dow_000
  */
 public class Rectangle extends Shape {
-    private int height;
-    private int width;
+    private double height;
+    private double width;
     
     @Override
     public void draw(Graphics g){
         g.drawRect(this.x, this.y, this.width, this.height);
     }
     
-    public Rectangle(int x, int y, int width, int height){
+    public Rectangle(double x, double y, double width, double height){
         this.x = x;
         this.y = y;
         this.height = height;

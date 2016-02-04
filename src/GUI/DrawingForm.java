@@ -3,7 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package drawingapplication;
+package GUI;
+import drawingapplication.Rectangle;
 import java.awt.Graphics;
 /**
  *
@@ -126,7 +127,10 @@ public class DrawingForm extends javax.swing.JFrame {
         if(rectangleRadio.isSelected()){
             
             Rectangle r = new Rectangle(10,10,width,height);
-            r.draw(g);
+            //r.draw(g);
+        }
+        else if(ellipseRadio.isSelected()){
+            
         }
     }//GEN-LAST:event_createButtonActionPerformed
 

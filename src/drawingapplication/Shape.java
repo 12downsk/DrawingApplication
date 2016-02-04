@@ -10,8 +10,8 @@ import java.awt.Graphics;
  * @author 12dow_000
  */
 public abstract class Shape extends DrawingApplication{
-    protected int x;
-    protected int y;
+    protected double x;
+    protected double y;
     
     public void draw(Graphics g){
         System.out.println("You can't draw an abstract shape.");

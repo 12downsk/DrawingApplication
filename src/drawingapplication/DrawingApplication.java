@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package drawingapplication;
-
+import java.awt.Graphics;
 /**
  *
  * @author 12dow_000
@@ -18,4 +18,7 @@ public class DrawingApplication {
         // TODO code application logic here
     }
     
+    public void paint(Graphics g){
+        
+    }
 }
