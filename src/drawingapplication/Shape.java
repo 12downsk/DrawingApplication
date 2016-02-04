@@ -4,14 +4,17 @@
  * and open the template in the editor.
  */
 package drawingapplication;
-
+import java.awt.Graphics;
 /**
  *
  * @author 12dow_000
  */
 public abstract class Shape extends DrawingApplication{
-    int x;
-    int y;
+    protected int x;
+    protected int y;
     
+    public void draw(Graphics g){
+        System.out.println("You can't draw an abstract shape.");
+    }
     
 }
