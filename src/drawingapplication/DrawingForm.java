@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package drawingapplication;
-
+import java.awt.Graphics;
 /**
  *
  * @author 12dow_000
@@ -115,10 +115,18 @@ public class DrawingForm extends javax.swing.JFrame {
 
     private void createButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createButtonActionPerformed
         // TODO add your handling code here:
-        if(rectangleRadio.isSelected())
-        {
-            Rectangle r = new Rectangle();
-            //r.draw(x,y,widthField.getText(),heightField.getText()); Do X and Y cords.
+        int frameWidth = canvas.getSize().width;
+        int frameHeight = canvas.getSize().height;
+        
+        int width = Integer.valueOf(widthField.getText());
+        int height = Integer.valueOf(heightField.getText());
+        
+        
+        
+        if(rectangleRadio.isSelected()){
+            
+            Rectangle r = new Rectangle(10,10,width,height);
+            r.draw(g);
         }
     }//GEN-LAST:event_createButtonActionPerformed
 

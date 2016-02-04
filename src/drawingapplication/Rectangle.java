@@ -17,4 +17,11 @@ public class Rectangle extends Shape {
     public void draw(Graphics g){
         g.drawRect(this.x, this.y, this.width, this.height);
     }
+    
+    public Rectangle(int x, int y, int width, int height){
+        this.x = x;
+        this.y = y;
+        this.height = height;
+        this.width = width;
+    }
 }
